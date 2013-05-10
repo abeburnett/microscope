@@ -4,5 +4,7 @@ Meteor.Router.add({
     '/posts/:_id': {
         to: 'postPage',
         and: function(id) { Session.set('currentPostID', id); }
-    }
+    },
+
+    '/submit': 'postSubmit'
 });
