@@ -11,6 +11,8 @@ if (Posts.find().count() === 0) {
         profile: { name: 'Sacha Greif' }
     });
 
+    var sacha = Meteor.users.findOne(sachaId);
+
     var abeId = Meteor.users.insert({
         profile: { name: 'Abe Burnett' }
     });
@@ -45,7 +47,7 @@ if (Posts.find().count() === 0) {
         title: 'Meteor',
         userId: tom._id,
         author: tom.profile.name,
-        url: 'http://meteor.com'
+        url: 'http://meteor.com',
         submitted: now - 10 * 3600 * 1000
     });
 
@@ -53,7 +55,7 @@ if (Posts.find().count() === 0) {
         title: 'The Meteor Book',
         author: tom.profile.name,
         userId: tom._id,
-        url: 'http://themeteorbook.com'
+        url: 'http://themeteorbook.com',
         submitted: now - 12 * 3600 * 1000
     });
 }
