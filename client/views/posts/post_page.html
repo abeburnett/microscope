@@ -8,5 +8,9 @@
         {{/each}}
     </ul>
 
+    {{#if currentUser}}
+        {{> commentSubmit}}
+    {{/if}}
+
     {{/with}}
 </template>
