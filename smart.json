@@ -7,6 +7,7 @@
     "router": {},
     "accounts-ui-bootstrap-dropdown": {},
     "spin": {},
-    "meteor-errors": {}
+    "meteor-errors": {},
+    "paginated-subscription": {}
   }
 }
