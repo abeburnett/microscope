@@ -25,9 +25,6 @@ Template.postsList.helpers({
             return post;
         });
     },
-    posts: function() {
-        return Posts.find({}, {sort: this.sort, limit: this.handle.limit()});
-    },
     postsReady: function() {
         return this.handle.ready();
     },
