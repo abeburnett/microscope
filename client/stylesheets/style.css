@@ -17,6 +17,7 @@ body {
 }
 
 #spinner { height: 300px; }
+
 .post {
     *zoom: 1;
     -webkit-transition: all 300ms 0ms;
@@ -26,6 +27,7 @@ body {
     transition: all 300ms ease-in;
     position: relative;
     opacity: 1;
+    transition:all 300ms 0ms ease-in;
 }
 
 .post:before, .post:after {
